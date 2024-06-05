@@ -1,0 +1,8 @@
+:root{
+ --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+ --bg: hsl(0, 0%, 100%);
+ --top-bg-pattern: hsl(225, 100%, 98%);
+ --card-bg: hsl(227, 47%, 96%);
+ --text: hsl(228, 12%, 44%);
+ --main-text: hsl(230, 17%, 14%);
+}
