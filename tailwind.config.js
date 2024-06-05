@@ -14,7 +14,7 @@ module.exports = {
         'bg-main': 'var(--bg)',
         'card-bg': 'var(--card-bg)',
         'top-bg-pattern': 'var(--top-bg-pattern)',
-        'text': 'var(--text)',
+        'normal': 'var(--text)',
         'main-text': 'var(--main-text)',
       },
       

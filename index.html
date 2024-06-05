@@ -9,90 +9,93 @@
   
   <title>Frontend Mentor | [Social Media Dashboard]</title>
 </head>
-<body>
+<body class="bg-bg-main text-normal transition-colors duration-100 ease-linear">
 <main class="w-[90%] mx-auto *:my-6">
   <header class="py-6 my-6 border-zinc-500 border-b">
-    <h1 class="font-bold text-xl">
+    <h1 class="font-bold text-xl text-main-text">
       Social Media Dashboard
     </h1>
-    <p class="text-text">
+    <p class="text-normal">
       Total Followers: 23,004
     </p>
   </header>
 
   <div class="flex justify-between">
-    <label for="toggle" class="text-text font-bold">Dark Mode</label>
-    <input type="range" name="" id="toggle" max="1">
+    <label for="toggle" class="text-normal font-bold">Dark Mode</label>
+    <input type="range" name="" id="toggler" max="1" >
   </div>
 
   <div class="border-t-[6px] rounded-md p-7 flex flex-col gap-4 items-center justify-center bg-card-bg has-[.facebook]:border-Facebook">
-    <a href="#" class="flex items-center gap-x-2 text-main-text font-semibold facebook">
+    <a href="#" class="flex items-center gap-x-2 font-semibold facebook">
       <img src="images/icon-facebook.svg" alt="icon-facebook">
       @nathanf
     </a>
-    <h3 class="flex flex-col items-center text-6xl font-bold">
+    <h3 class="flex flex-col items-center text-6xl font-bold text-main-text">
       1987
     </h3>
 
-    <p class="text-text -mt-4 mb-4">
+    <p class="text-normal -mt-4 mb-4">
       Followers
     </p>
     <p class="flex  items-center gap-1 text-Lime-Green font-bold">
-      <img src="images/icon-up.svg" alt="">
+      <img src="images/icon-up.svg" alt="icon-up">
       12 Today
     </p>
   </div>
 
   <div class="border-t-[6px] rounded-md p-7 flex flex-col gap-4 items-center justify-center bg-card-bg has-[.twitter]:border-Twitter">
-    <a href="#" class="flex items-center gap-x-2 text-main-text font-semibold twitter">
+    <a href="#" class="flex items-center gap-x-2 font-semibold twitter">
       <img src="images/icon-twitter.svg" alt="icon-twitter">
       @nathanf
     </a>
-    <p>
+    <h3  class="flex flex-col items-center text-6xl font-bold text-main-text">
       1044
-    </p>
+    </h3>
     <p>
       Followers
     </p>
-    <p>
+    <p class="flex  items-center gap-1 text-Lime-Green font-bold">
+      <img src="images/icon-up.svg" alt="icon-up">
       99 Today
     </p>
   </div>
 
   <div class="border-t-[6px] rounded-md p-7 flex flex-col gap-4 items-center justify-center bg-card-bg relative">
     <div class="w-full h-[6px] border-r rounded-tl-md rounded-tr-md top-0 translate-y-[-6px] absolute has-[.instagram] bg-gradient-to-r from-Instagram-start to-Instagram-end"></div>
-    <a href="#" class="flex items-center gap-x-2 text-main-text font-semibold instagram">
+    <a href="#" class="flex items-center gap-x-2 font-semibold instagram">
       <img src="images/icon-instagram.svg" alt="icon-instagram">
       @realnathanf
     </a>
-    <p>
+    <h3 class="flex flex-col items-center text-6xl font-bold text-main-text">
       11k
-    </p>
+    </h3>
     <p>
       Followers
     </p>
-    <p>
+    <p class="flex  items-center gap-1 text-Lime-Green font-bold">
+      <img src="images/icon-up.svg" alt="icon-up">
       1099 Today
     </p>
   </div>
 
   <div class="border-t-[6px] rounded-md p-7 flex flex-col gap-4 items-center justify-center bg-card-bg has-[.youtube]:border-YouTube">
-    <a href="#" class="flex items-center gap-x-2 text-main-text font-semibold youtube">
+    <a href="#" class="flex items-center gap-x-2 font-semibold youtube">
       <img src="images/icon-youtube.svg" alt="icon-youtube">
       Nathan F.
     </a>
-    <p>
+    <h3 class="flex flex-col items-center text-6xl font-bold text-main-text">
       8239
-    </p>
+    </h3>
     <p>
       Subscribers
     </p>
-    <p>
+    <p class="flex items-center gap-1 text-Bright-Red font-bold">
+      <img src="images/icon-down.svg" alt="icon-down">
       144 Today
     </p>
   </div>
 
-  <h2 class="text-text font-bold text-2xl mt-10">
+  <h2 class="font-bold text-2xl mt-10 text-main-text">
     Overview - Today
   </h2>
 
@@ -101,7 +104,7 @@
       <p class="font-semibold">
         Page Views
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         87
       </p>
     </div>
@@ -121,7 +124,7 @@
       <p class="font-semibold">
         Likes
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         52
       </p>
     </div>
@@ -142,7 +145,7 @@
       <p class="font-semibold">
         Likes
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         5462
       </p>
     </div>
@@ -164,7 +167,7 @@
       <p class="font-semibold">
         Profile Views
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         52k
       </p>
     </div>
@@ -184,7 +187,7 @@
       <p class="font-semibold">
         Retweets
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         117
       </p>
     </div>
@@ -204,7 +207,7 @@
       <p class="font-semibold">
         Likes
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         507
       </p>
     </div>
@@ -224,7 +227,7 @@
       <p class="font-semibold">
         Likes
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         107
       </p>
     </div>
@@ -245,7 +248,7 @@
       <p class="font-semibold">
         Total Views
       </p>
-      <p class="font-bold text-3xl m-0">
+      <p class="font-bold text-3xl m-0 text-main-text">
         1407
       </p>
     </div>
@@ -259,7 +262,7 @@
       </div>
     </div>
   </div>
-  
+  <script src="app.js"></script>
 </main>
 </body>
 </html>
