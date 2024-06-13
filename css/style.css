@@ -1,5 +1,5 @@
 :root{
- --toggle: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+ --toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
  --bg: hsl(0, 0%, 100%);
  --top-bg-pattern: hsl(225, 100%, 98%);
  --card-bg: hsl(227, 47%, 96%);
@@ -13,3 +13,41 @@
     --text: hsl(228, 34%, 66%);
     --main-text: hsl(0, 0%, 100%);
 }
+input[type="range"] {
+  appearance :none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  width: 70px;
+
+}
+/* Google Chrome */
+input[type="range"]::-webkit-slider-runnable-track {
+    background-image: var(--toggle);
+    border-radius: 106px;
+    -webkit-appearance: none;
+    appearance: none;
+    height: 30px;
+    padding: 6px;
+  }
+  
+input[type="range"]::-webkit-slider-thumb{
+  height: 20px;
+  background-color: var(--bg);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  -webkit-appearance: none;
+  appearance: none;
+  transform: translateY(-0.5px);
+
+}
+/* Firefox */
+input[type="range"]::-moz-slider-thumb{
+    height: 20px;
+    background-color: var(--bg);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: 0 0 0 var(--l) inset var(--c);
+    -webkit-appearance: none;
+    appearance: none;
+  }

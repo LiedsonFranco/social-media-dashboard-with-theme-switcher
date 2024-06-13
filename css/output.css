@@ -670,6 +670,11 @@ video {
   row-gap: 0.75rem;
 }
 
+.gap-x-3 {
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -794,6 +799,10 @@ video {
   transition-duration: 100ms;
 }
 
+.duration-500 {
+  transition-duration: 500ms;
+}
+
 .ease-linear {
   transition-timing-function: linear;
 }
@@ -801,6 +810,11 @@ video {
 .\*\:my-6 > * {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+.\*\:my-4 > * {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .has-\[\.facebook\]\:border-Facebook:has(.facebook) {
@@ -819,7 +833,23 @@ video {
 }
 
 @media (min-width: 768px) {
+  .md\:flex {
+    display: flex;
+  }
+
   .md\:grid {
     display: grid;
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .md\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .md\:justify-end {
+    justify-content: flex-end;
   }
 }
